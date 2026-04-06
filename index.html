@@ -1,4 +1,4 @@
-eac<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -1157,37 +1157,33 @@ footer {
           </div>
         </div>
         <div class="contact-detail">
-          <div class="contact-icon">📍</div>
-          <div class="contact-detail-text">
-            <span>Location</span>
-            <strong>Omaha NE · Nationwide</strong>
-          </div>
-        </div>
-        <div style="margin-top:48px;padding:28px;background:var(--green-pale);border-radius:var(--radius);border:1px solid rgba(13,107,79,0.15)">
-          <p style="font-size:14px;color:var(--green-deep);font-weight:500;margin-bottom:8px">✓ Free 30-minute strategy call</p>
-          <p style="font-size:13px;color:var(--text-mid);margin:0">No commitment required. We'll map out a content plan for your business, completely free.</p>
-        </div>
+       <div class="footer-col">
+        <h4>Company</h4>
+        <ul class="footer-list">
+          <li><a href="#" onclick="showPage('home')">Home</a></li>
+          <li><a href="#" onclick="showPage('about')">About</a></li>
+          <li><a href="#" onclick="showPage('contact')">Contact</a></li>
+        </ul>
       </div>
-      <div class="reveal reveal-delay-1">
-        <form class="contact-form" action="https://formspree.io/f/xkopkqkj" method="POST">
-          <div class="form-row">
-            <div class="form-group">
-              <label>First Name</label>
-              <input type="text" name="firstName" placeholder="John" required>
-            </div>
-            <div class="form-group">
-              <label>Last Name</label>
-              <input type="text" name="lastName" placeholder="Smith" required>
-            </div>
-          </div>
-          <div class="form-group">
-            <label>Email Address</label>
-            <input type="email" name="email" placeholder="john@realestate.com" required>
-          </div>
-          <div class="form-group">
-            <label>Phone Number</label>
-            <input type="tel" name="phone" placeholder="(555) 000-0000">
-          </div>
+
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul class="footer-list">
+          <li><a href="#" onclick="showPage('services')">Video Production</a></li>
+          <li><a href="#" onclick="showPage('services')">Photography</a></li>
+          <li><a href="#" onclick="showPage('services')">Social Strategy</a></li>
+          <li><a href="#" onclick="showPage('services')">Lead Funnels</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Get Started</h4>
+        <ul class="footer-list">
+          <li><a href="#" onclick="showPage('pricing')">Pricing</a></li>
+          <li><a href="#" onclick="showPage('contact')">Book a Call</a></li>
+          <li><a href="#" onclick="showPage('contact')">Wholesale</a></li>
+        </ul>
+      </div>
           <div class="form-group">
             <label>Message</label>
             <textarea name="message" placeholder="Tell us about your business and goals..." required></textarea>
