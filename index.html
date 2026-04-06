@@ -395,12 +395,34 @@ footer {
   padding-bottom: 48px; border-bottom: 1px solid rgba(255,255,255,0.1);
 }
 .footer-brand {
-  display: flex; align-items: center; gap: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
-.footer-brand img {
-  width: 32px; height: 32px; flex-shrink: 0;
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
-.footer-tagline { font-size: 14px; color: rgba(255,255,255,0.7); font-weight: 300; line-height: 1.6; }
+.footer-logo img {
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+}
+.footer-logo::after {
+  content: 'GroundRise';
+  color: var(--white);
+  font-weight: 800;
+  font-size: 18px;
+  letter-spacing: -0.02em;
+}
+.footer-tagline { 
+  font-size: 14px; 
+  color: rgba(255,255,255,0.7); 
+  font-weight: 300; 
+  line-height: 1.6;
+  max-width: 280px;
+}
 
   /* ── SERVICES PAGE ── */
   .services-hero {
