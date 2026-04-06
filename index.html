@@ -388,6 +388,7 @@
 /* ── FOOTER ── */
 footer {
   background: var(--text-dark); padding: 64px 48px 36px;
+  color: var(--white);
 }
 .footer-inner { max-width: 1200px; margin: 0 auto; }
 .footer-top {
@@ -403,6 +404,8 @@ footer {
   display: flex;
   align-items: center;
   gap: 12px;
+  color: var(--white);
+  font-weight: 600;
 }
 .footer-logo img {
   width: 32px;
@@ -414,12 +417,20 @@ footer {
 }
 .footer-tagline { 
   font-size: 14px; 
-  color: rgba(255,255,255,0.7); 
+  color: var(--white); 
   font-weight: 300; 
   line-height: 1.6;
   max-width: 280px;
 }
-
+.footer-top h3, .footer-top a, .footer-top p {
+  color: var(--white);
+}
+.footer-top a:hover {
+  color: var(--green-light);
+}
+.footer-bottom {
+  color: var(--white);
+}
   /* ── SERVICES PAGE ── */
   .services-hero {
     padding: 180px 48px 100px;
