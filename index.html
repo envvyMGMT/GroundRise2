@@ -463,23 +463,25 @@ footer {
   }
   .services-detail-grid.reverse { direction: rtl; }
   .services-detail-grid.reverse > * { direction: ltr; }
-  .sd-visual {
-    aspect-ratio: 4/3; border-radius: var(--radius-lg);
-    overflow: hidden; position: relative;
-  }
+.sd-visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
   .sd-visual-inner {
     width: 100%; height: 100%;
     display: flex; align-items: center; justify-content: center;
     font-size: 80px;
   }
   .sd-visual-1 { background: linear-gradient(135deg, #e8f4ef, #c8e8da); }
-  .sd-visual-2 { background: linear-gradient(135deg, #f0f7f4, #d8f0e6); }
-  .sd-visual-3 { background: linear-gradient(135deg, #e0ede8, #c0d8cc); }
-  .sd-visual-4 { background: linear-gradient(135deg, #dff0ea, #c5e5d8); }
-  .sd-visual img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.sd-visual {
+  aspect-ratio: 4/3;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  position: relative;
+}
   object-position: center;
   display: block;
 }
